@@ -10,25 +10,25 @@ Case de produto por **Gabriel · [@gabrieltechdesign](https://instagram.com/gabr
 
 ## Estrutura
 
-| Arquivo       | Descrição                                      |
-|---------------|------------------------------------------------|
-| `index.html`  | App single-page (React embutido) — site estático |
+| Arquivo            | Descrição                                      |
+|--------------------|------------------------------------------------|
+| `docs/index.html`  | App single-page (React embutido) — publicado no Pages |
+| `index.html`       | Cópia local na raiz (opcional para editar)     |
 
 ## GitHub Pages
 
-Site estático na raiz do repositório (`index.html` + `.nojekyll`). Não precisa de build.
+Publicação a partir da pasta **`/docs`** na branch **`main`**. O arquivo **`docs/.nojekyll`** desliga o Jekyll (necessário porque o React minificado usa `{{` e quebraria o build).
 
-**Ativar (uma vez):** [Settings → Pages](https://github.com/ogabrielmoreira/POC-GR-O-CAPITAL/settings/pages) → **Build and deployment** → **Deploy from a branch** → Branch **main**, pasta **/ (root)** → Save.
+**Settings → Pages:** branch **main**, pasta **`/docs`**.
 
-Depois de alguns minutos o protótipo fica em:  
-https://ogabrielmoreira.github.io/POC-GR-O-CAPITAL/
+URL: https://ogabrielmoreira.github.io/POC-GR-O-CAPITAL/
 
 ## Rodar localmente
 
 Abra `index.html` no navegador ou use um servidor estático:
 
 ```bash
-python3 -m http.server 8080
+cd docs && python3 -m http.server 8080
 ```
 
 Acesse [http://localhost:8080](http://localhost:8080).
