@@ -16,7 +16,9 @@ Case de produto por **Gabriel · [@gabrieltechdesign](https://instagram.com/gabr
 
 ## GitHub Pages
 
-O site é publicado automaticamente a partir da branch `main` (pasta raiz). Não é necessário build.
+Deploy automático via [GitHub Actions](.github/workflows/pages.yml) a cada push na `main`. Não há build — o artefato é o site estático na raiz (`.nojekyll` evita processamento Jekyll).
+
+Se for a primeira vez: em **Settings → Pages**, confirme que a origem é **GitHub Actions**.
 
 ## Rodar localmente
 
