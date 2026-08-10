@@ -16,9 +16,12 @@ Case de produto por **Gabriel · [@gabrieltechdesign](https://instagram.com/gabr
 
 ## GitHub Pages
 
-Deploy automático via [GitHub Actions](.github/workflows/pages.yml) a cada push na `main`. Não há build — o artefato é o site estático na raiz (`.nojekyll` evita processamento Jekyll).
+Site estático na raiz do repositório (`index.html` + `.nojekyll`). Não precisa de build.
 
-Se for a primeira vez: em **Settings → Pages**, confirme que a origem é **GitHub Actions**.
+**Ativar (uma vez):** [Settings → Pages](https://github.com/ogabrielmoreira/POC-GR-O-CAPITAL/settings/pages) → **Build and deployment** → **Deploy from a branch** → Branch **main**, pasta **/ (root)** → Save.
+
+Depois de alguns minutos o protótipo fica em:  
+https://ogabrielmoreira.github.io/POC-GR-O-CAPITAL/
 
 ## Rodar localmente
 
